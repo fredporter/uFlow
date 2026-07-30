@@ -1,0 +1,11 @@
+{
+  "id": "uflow",
+  "name": "uFlow Workflow Engine",
+  "kind": "workflow",
+  "version": "0.1.0",
+  "description": "Workflow definitions, runs, logs, task orchestration — extracted from uCore",
+  "optional": false,
+  "api_prefix": "/api/workflows",
+  "route_registrar": "uflow.routes.register_routes",
+  "dependencies": ["ucore-core"]
+}
