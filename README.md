@@ -13,6 +13,11 @@ uFlow is the durable authority for missions, tasks, workflow definitions, runs, 
 automation state. uCore hosts the Workflow and Developer views; it must not create a
 second task store or revive uDev task ownership.
 
+Markdown task state lives at `$UFLOW_TASKS_DIR` when explicitly configured, otherwise
+at `$UDOS_HOME/flow/tasks` (default `~/Code/.udos/flow/tasks`). `UCORE_TASKER_DIR` is
+accepted only as a transition-time environment alias. Repository-local `.tasker`
+directories are not runtime stores.
+
 ## Architecture
 
 ```
